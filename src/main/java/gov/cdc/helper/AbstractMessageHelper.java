@@ -20,6 +20,13 @@ public class AbstractMessageHelper {
 	public static final String CONST_TRACE = "trace";
 	public static final String CONST_MESSAGE = "message";
 
+
+	/**
+	 * Appends exception information to specified map
+	 *
+	 * @param log stores exception details
+	 * @param e exception to be stored in log
+	 */
 	public static void append(Map<String, Object> log, Exception e) {
 		log.put(AbstractMessageHelper.CONST_SUCCESS, false);
 		log.put(AbstractMessageHelper.CONST_ERROR, e.getMessage());
